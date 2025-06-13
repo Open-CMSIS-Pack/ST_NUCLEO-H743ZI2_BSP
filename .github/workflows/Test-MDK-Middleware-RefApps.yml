@@ -82,9 +82,9 @@ jobs:
       - name: Replace specific csolution files
         working-directory: ./
         run: |
-          if [ -e ./BSP/.ci/MW-RefApps/Examples/${{ matrix.solution.dir }}/${{ matrix.solution.name }}.csolution.yml ]
+          if [ -e ./.ci/MW-RefApps/Examples/${{ matrix.solution.dir }}/${{ matrix.solution.name }}.csolution.yml ]
           then
-             cp -f ./BSP/.ci/MW-RefApps/Examples/${{ matrix.solution.dir }}/${{ matrix.solution.name }}.csolution.yml ./CI/MW-RefApps/Examples/${{ matrix.solution.dir }}/${{ matrix.solution.name }}.csolution.yml
+             cp -f ./.ci/MW-RefApps/Examples/${{ matrix.solution.dir }}/${{ matrix.solution.name }}.csolution.yml ./CI/MW-RefApps/Examples/${{ matrix.solution.dir }}/${{ matrix.solution.name }}.csolution.yml
           fi
 
       - name: Add the board layer to the ${{ matrix.solution.dir }}/${{ matrix.solution.name }}.csolution.yml
