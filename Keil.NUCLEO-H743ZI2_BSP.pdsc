@@ -23,7 +23,7 @@
       - add RTE_Components.h files
       - add Blinky+NUCLEO-H743ZI2.dbgconf and Blinky+NUCLEO-H743ZI2.dbgconf.base@1.1.0 files for the Blinky example
       - modified the CI workflows Test-Examples.yml and Test-MDK-Middleware-RefApps.yml
-	  - updated settings in vcpkg-configuration.json file to use cmsis-toolbox 2.9.0
+      - updated settings in vcpkg-configuration.json file to use cmsis-toolbox 2.9.0
     </release>
   </releases>
 
